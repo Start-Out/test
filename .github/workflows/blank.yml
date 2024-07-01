@@ -28,6 +28,6 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          if ( ${{ secrets.PASSWORD }} -eq "password" )
+          if [ ${{ secrets.PASSWORD }} -eq "password" ] then
             echo "The secret works!"
           fi
